@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+
+    <meta charset="utf-8" />
+    <meta name="author" content="Genuine Stalwart" />
+    <meta name="description" content="GS Calculator - A simple frontend-based project built with Responsive Web Design, jQuery and mobile-first workflow." />
+    <meta name="keywords" content="calculator,  genuine stalwart, gs, gs calculator" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amarante&family=Caladea:wght@700&family=Arima+Madurai:wght@700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <!-- JS -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <!-- Others -->
+
+    <title>GS Calculator</title>
+</head>
+<body>
+    <main>
+
+        <!-- Header -->
+
+        <header><h1>GS Calculator</h1></header>
+
+        <!-- Containers -->
+
+        <div id="text-container">
+            <div id="user-typed-text">0</div>
+            <div id="calculated-text"></div>
+        </div>
+        
+        <div id="button-container">
+            <div class="button-rows"><button class="red-buttons" onclick="ac()">AC</button><button class="red-buttons" onclick="del()">DEL</button><button class="green-buttons" onclick="addText('π')">π</button><button class="green-buttons" onclick="addText('%')">%</button></div>
+            <div class="button-rows"><button class="blue-buttons" onclick="addText('1')">1</button><button class="blue-buttons" onclick="addText('2')">2</button><button class="blue-buttons" onclick="addText('3')">3</button><button class="green-buttons" onclick="addText('(')">(</button><button class="green-buttons" onclick="addText(')')">)</button></div>
+            <div class="button-rows"><button class="blue-buttons" onclick="addText('4')">4</button><button class="blue-buttons" onclick="addText('5')">5</button><button class="blue-buttons" onclick="addText('6')">6</button><button class="green-buttons" onclick="addText('÷')">÷</button><button class="green-buttons" onclick="addText('×')">×</button></div>
+            <div class="button-rows"><button class="blue-buttons" onclick="addText('7')">7</button><button class="blue-buttons" onclick="addText('8')">8</button><button class="blue-buttons" onclick="addText('9')">9</button><button class="green-buttons" onclick="addText('+')">+</button><button class="green-buttons" onclick="addText('−')">−</button></div>
+            <div class="button-rows"><button class="blue-buttons" onclick="addText('0')">0</button><button class="blue-buttons" onclick="addText('.')">.</button><button class="blue-buttons" onclick="addText('ANS')">ANS</button><button id="equal-button" onclick="equal()">=</button></div>
+        </div>
+
+        <!-- Footer -->
+
+        <footer><span>genuinestalwart</span> <span>&copy;2021</span> <a href="#">Learn More</a></footer>
+    </main>
+</body>
+</html>
