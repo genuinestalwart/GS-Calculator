@@ -1,0 +1,150 @@
+/* Level 1 */
+
+* {
+    box-sizing: border-box;
+}
+main {
+    background-color: darkcyan;
+    height: 100vh;
+}
+header {
+    background-color: mediumaquamarine;
+    height: 10%;
+}
+#text-container {
+    background-color: #5865f2; /* blurple */
+    border: 5px solid darkslateblue;
+    border-radius: 10px;
+    margin: 5%;
+    padding: 2.5%;
+}
+#button-container {
+    height: calc(55% - 10vw);
+}
+footer {
+    color: cyan;
+    font: 1.125rem 'Arima Madurai', cursive;
+    height: 15%;
+    line-height: 13vh;
+}
+
+/* Level 2 */
+
+h1 {
+    color: slateblue;
+    font: bold 2rem 'Amarante', cursive;
+    line-height: 10vh;
+}
+#text-container > * {
+    color: darkslateblue;
+    font: 1.75rem 'Caladea', serif;
+    height: 50%;
+    line-height: calc(10vh - 2.5vw - 5px);
+    white-space: nowrap;
+}
+button {
+    border-radius: 5px;
+    color: indigo;
+    font: 1rem 'Caladea', serif;
+    height: calc(100% - 5vw);
+    margin: 2.5%;
+    width: 15%;
+}
+
+/* Level 3 */
+
+.green-buttons {
+    background-color: mediumspringgreen;
+    border-color: aquamarine;
+}
+.red-buttons {
+    background-color: salmon;
+    border-color: lightsalmon;
+    width: 25%;
+}
+.blue-buttons {
+    background-color: deepskyblue;
+    border-color: skyblue;
+}
+#equal-button {
+    background-color: salmon;
+    border-color: lightsalmon;
+    width: 35%;
+}
+a {
+    text-decoration: none;
+}
+
+/* Level 4 */
+
+body, h1 {
+    margin: 0;
+}
+main, #text-container > * {
+    overflow: auto;
+}
+#text-container, .button-rows {
+    height: 20%;
+}
+footer, h1 {
+    text-align: center;
+}
+
+/* Level 5 */
+
+@media only screen and (min-width: 381px) {
+footer {
+    font-size: 1.375rem;
+}
+h1 {
+    font-size: 3rem;
+}
+#text-container > * {
+    font-size: 2.5rem;
+}
+button {
+    font-size: 1.125rem;
+}
+}
+
+/* Level 6 */
+
+@media only screen and (min-width: 768px) {
+body {
+    background: #09152e url("bg_image.jpg") round;
+}
+main {
+    border: 10px solid cyan; /* under-const */
+    border-radius: 20px;
+    height: 960px;
+    width: 480px;
+}
+#button-container {
+    height: 460px;
+}
+footer {
+    line-height: 124.8px;
+}
+h1 {
+    line-height: 96px;
+}
+#text-container > * {
+    line-height: 79px;
+}
+button {
+    height: 72px;
+}
+}
+
+/* Level 7 */
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+main {
+    margin: calc(50vh - 480px) auto;
+}
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+main {
+    margin: 10vw auto;
+}
+}
