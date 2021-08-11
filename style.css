@@ -3,6 +3,9 @@
 * {
     box-sizing: border-box;
 }
+*::-webkit-scrollbar { 
+    display: none; 
+}
 main {
     background-color: darkcyan;
     height: 100vh;
