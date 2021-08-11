@@ -6,6 +6,7 @@
 main {
     background-color: darkcyan;
     height: 100vh;
+    overflow: hidden;
 }
 header {
     background-color: mediumaquamarine;
@@ -40,6 +41,7 @@ h1 {
     font: 1.75rem 'Caladea', serif;
     height: 50%;
     line-height: calc(10vh - 2.5vw - 5px);
+    overflow-x: auto;
     white-space: nowrap;
 }
 button {
@@ -79,9 +81,6 @@ a {
 
 body, h1 {
     margin: 0;
-}
-main, #text-container > * {
-    overflow: auto;
 }
 #text-container, .button-rows {
     height: 20%;
